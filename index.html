@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script Quiz Time</title>
+    <link rel="stylesheet"type="text/css" href="./assets/css/styles.css"/>
+</head>
+<body>
+    <body>
+        <header>
+          <div class= "large-font">Coding Quiz Time</div>
+          <p>Press the button below to start the coding quiz. A timer will start once the start button is clicked,
+            and the time left will be your final score. If you answer a question incorrectly, your time will 
+            be lowered 10 seconds from the timer and your overall final score.
+          </p>
+          <button class="start-button">Start</button>
+        </header>
+    
+        <main>
+            
+          <section class="quiz-question">
+            <h2>Question</h2>
+            <ul>
+                <li><button>Question</button><li>
+            </ul>
+          </section>  
+              
+          <section>
+            <div class="card results">
+              <div class = "correct-incorrect-container">
+              <div>
+              <h2>Correct: <span class="correct">0 </span> </h2>
+              <h2>Incorrect: <span class="incorrect">0</span></h2>
+            </div>
+              <button class="reset-button">Reset Score</button>
+          </div>
+              <div class= "card timer">
+                <div class = "timer-text">
+                <div class="large-font timer-count">10</div>
+                <h3>seconds remaining</h3>
+              </div>
+            
+              </div>
+            </div>
+          </section>
+
+
+          <!-- finished quiz screen -->
+          <section class="finished-quiz">
+            <h2>Quiz Finished!</h2>
+            <p>Your Score:0</p>
+             <div>
+                <label for="">Enter initials:</label>
+                <input type="text">
+                <button>Submit</button>
+             </div>
+          </section>
+
+        </main>
+        <script src="assets/js/script.js"></script>
+      </body>
+    
+
+</html>
