@@ -1,1 +1,4 @@
 # quiz-time
+
+This is an 80 second timed quiz that contains 4 questions, each with 4 answers with only one correct answers.
+If the user selects the wrong answer 10 seconds will be deducted from the quiz and the next question will pop up. If the user answers all the questions before the 80 second time limit, the seconds left will be their final score. Their initials will be entered after the quiz is finished. These scores will be stored in local storage and the lowest number(being seconds) will be the high score, and the next lowest score will be the second place score, and the third lowest score will be the third place score.
