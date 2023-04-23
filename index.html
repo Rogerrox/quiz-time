@@ -20,13 +20,37 @@
     
         <main>
             
-          <section class="quiz-question">
-            <div>
-              <h2>Question</h2>
-              <ol></ol>
-              <li>
-                Java script handles?
-              </li>
+          <div class="quiz-container" id="quiz">
+            <div class="quiz-header">
+              <h2 id="questions">Questions </h2>
+              <ul>
+                <li> 
+                  <input type="radio" name="answers" id="a" class="answers">
+                  <label for="a" id="a_text">Answers</label>
+                </li>
+                <li> 
+                  <input type="radio" name="answer" id="b" class="answer">
+                  <label for="b" id="b_text">Answers</label>
+                </li>
+                <li> 
+                  <input type="radio" name="answer" id="c" class="answer">
+                  <label for="c" id="c_text">Answers</label>
+                </li>
+                <li> 
+                  <input type="radio" name="answer" id="d" class="answer">
+                  <label for="d" id="d_text">Answers</label>
+                </li>
+              </ul>
+            </div>
+
+            <button id="Submit">Submit</button>
+
+                <!-- <li><button>Answer 2</button></li>
+                <li><button>Answer 3</button></li>
+                <li><button>Answer 4</button></li>
+              </ul>   -->
+                <!-- Java script handles? -->
+              <!-- </li>
 
               <li>
                  If var a = "10" and var b = 10, what is the Value and type?
@@ -43,11 +67,11 @@
             </div> 
             
             <ul>
-                <li><button>Question</button><li>
-            </ul>
-          </section>  
+                <li><button>Next Question</button><li>
+            </ul> -->
+          <!-- </section>   -->
               
-          <section>
+          <!-- <section>
             <div class="card results">
               <div class = "correct-incorrect-container">
               <div>
@@ -55,28 +79,38 @@
               <h2>Incorrect: <span class="incorrect">0</span></h2>
             </div>
               <button class="reset-button">Reset Score</button>
-          </div>
-              <div class= "card timer">
+          </div> -->
+              <!-- <div class= "card timer">
                 <div class = "timer-text">
                 <div class="large-font timer-count">10</div>
                 <h3>seconds remaining</h3>
-              </div>
+              </div> -->
             
-              </div>
-            </div>
-          </section>
+              <!-- </div> -->
+            <!-- </div> -->
+          <!-- </section> -->
 
 
           <!-- finished quiz screen -->
-          <section class="finished-quiz">
+          <!-- <section class="finished-quiz">
             <h2>Quiz Finished!</h2>
             <p>Your Score:0</p>
              <div>
                 <label for="">Enter initials:</label>
                 <input type="text">
                 <button>Submit</button>
-             </div>
+             </form>
           </section>
+
+          <section class="highscores">
+            <h2>Highscores</h2>
+              <ol>
+
+                <li>RM - 5</li>
+              </ol>
+              <button>Go Back</button>
+              <button>Clear Highscores</button>
+          </section> -->
 
         </main>
         <script src="assets/js/script.js"></script>
