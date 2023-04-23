@@ -25,9 +25,9 @@ var randomQuestions = [
     correctAnswer: "overall functionality of the application" 
   },
   {
-    question: "Java script handles?",
-    options: [
-      "Content",
+    question: "If var b = 10 and var a = 10, The console log expression for value and type will be?",
+      options: [
+      "console.log(b=a)",
       "format",
       "Design",
       "overall functionality of the application",
@@ -81,39 +81,39 @@ optionBtnD.textContent = randomQuestions[0].options[3]
 
 // renderLastRegistered();
 
-// function displayMessage(type, message) {
-//     msgDiv.textContent = message;
-//     msgDiv.setAttribute("class", type);
-//   }
+function displayMessage(type, message) {
+    msgDiv.textContent = message;
+    msgDiv.setAttribute("class", type);
+  }
 
 
-//  //Event Listener that utilze the first function 
+ //Event Listener that utilze the first function 
 
-// // start time function with a timer and go to next function, 
+// start time function with a timer and go to next function, 
 
-// function startButton(){
-//   timer = setInterval(clock,1000)
+function startButton(){
+  timer = setInterval(clock,1000)
 
-// //Prevents start button from being clicked when round is in progress
-//     startButton.disabled = true;
-//     // function two callout
-//   }
+//Prevents start button from being clicked when round is in progress
+    startButton.disabled = true;
+    // function two callout
+  }
 
-// function clock(){
-//  //Set timer
+function clock(){
+ //Set timer
  
-//    timerCount--;
-//    timerElement.textContent = timerCount;
+   timerCount--;
+   timerElement.textContent = timerCount;
    
   
-// // Tests if time has run out
-//   if (timerCount === 0) {
+// Tests if time has run out
+  if (timerCount === 0) {
 
-//    loseGame();
-//    }  
+   loseGame();
+   }  
   
-// }
+}
 
 
 
-// startButton.addEventListener("click",startQuiz);
+ startButton.addEventListener("click",startQuiz);
