@@ -4,14 +4,14 @@ var timerCount=80
 
 //Questions
 var nextBtn =document.querySelector("#next-btn")
-var questionEl = document.querrySelector("#questions");
+var questionEl = document.querySelector("#questions");
 var answerBtn = document.querySelectorAll(".option-btn");
-var optionBtnA = document.querrySelector("#a");
-var optionBtnB = document.querrySelector("#b");
-var optionBtnC = document.querrySelector("#c");
-var optionBtnD = document.querrySelector("#d");
-var questionEl = document.getElementById("quest");
-var randomQuestons = [
+var optionBtnA = document.querySelector("#a_text");
+var optionBtnB = document.querySelector("#b_text");
+var optionBtnC = document.querySelector("#c_text");
+var optionBtnD = document.querySelector("#d_text");
+
+var randomQuestions = [
   
   {
     question: "Java script handles?",
@@ -46,7 +46,11 @@ var randomQuestons = [
   },
 ]
 
-
+questionEl.textContent = randomQuestions[0].question
+optionBtnA.textContent = randomQuestions[0].options[0]
+optionBtnB.textContent = randomQuestions[0].options[1]
+optionBtnC.textContent = randomQuestions[0].options[2]
+optionBtnD.textContent = randomQuestions[0].options[3]
 
 
 //var body  document.body;
