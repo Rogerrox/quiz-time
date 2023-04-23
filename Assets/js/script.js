@@ -14,8 +14,8 @@ var questionEl = document.getElementById("quest");
 var randomQuestons = [
   
   {
-    question: "Java script handles?"
-    options; [
+    question: "Java script handles?",
+    options: [
       "Content",
       "format",
       "Design",
@@ -25,7 +25,7 @@ var randomQuestons = [
     correctAnswer: "overall functionality of the application" 
   },
   {
-    question: "Java script handles?"
+    question: "Java script handles?",
     options: [
       "Content",
       "format",
@@ -35,7 +35,7 @@ var randomQuestons = [
     correctAnswer: "overall functionality of the application" 
   },
   {
-    question: "Java script handles?"
+    question: "Java script handles?",
     options: [
       "Content",
       "format",
