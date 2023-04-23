@@ -1,8 +1,10 @@
-var startButton = document.querySelector(".start-button")
+var startButton = document.querySelector(".start-button");
+var submit = document.querySelector("#submit");
 var timer;
 var timerCount=80
 
 //Questions
+var questionsDiv =document.querySelector("#quiz")
 var nextBtn =document.querySelector("#next-btn")
 var questionEl = document.querySelector("#questions");
 var answerBtn = document.querySelectorAll(".option-btn");
@@ -11,7 +13,7 @@ var optionBtnB = document.querySelector("#b_text");
 var optionBtnC = document.querySelector("#c_text");
 var optionBtnD = document.querySelector("#d_text");
 
-var randomQuestions = [
+var quizQuestions = [
   
   {
     question: "Java script handles?",
@@ -46,11 +48,13 @@ var randomQuestions = [
   },
 ]
 
-questionEl.textContent = randomQuestions[0].question
-optionBtnA.textContent = randomQuestions[0].options[0]
-optionBtnB.textContent = randomQuestions[0].options[1]
-optionBtnC.textContent = randomQuestions[0].options[2]
-optionBtnD.textContent = randomQuestions[0].options[3]
+questionEl.textContent = quizQuestions[0].question
+optionBtnA.textContent = quizQuestions[0].options[0]
+optionBtnB.textContent = quizQuestions[0].options[1]
+optionBtnC.textContent = quizQuestions[0].options[2]
+optionBtnD.textContent = quizQuestions[0].options[3]
+
+
 
 
 //var body  document.body;
@@ -91,7 +95,7 @@ function displayMessage(type, message) {
 
 // start time function with a timer and go to next function, 
 
-function startButton(){
+function startBtn(){
   timer = setInterval(clock,1000)
 
 //Prevents start button from being clicked when round is in progress
@@ -113,7 +117,12 @@ function clock(){
    }  
   
 }
+// starts quiz
+function startQuiz(){
+questionsDiv.removeAttribute("class");
+}
 
 
 
  startButton.addEventListener("click",startQuiz);
+ //submit.addEventListener("click",option)
