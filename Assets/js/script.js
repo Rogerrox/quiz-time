@@ -30,21 +30,31 @@ var quizQuestions = [
     question: "If var b = 10 and var a = 10, The console log expression for value and type will be?",
       options: [
       "console.log(b=a)",
-      "format",
-      "Design",
-      "overall functionality of the application",
+      "console.log(b!=a)",
+      "console.log(b===a)",
+      "none of the above",
     ],
-    correctAnswer: "overall functionality of the application" 
+    correctAnswer: "console.log(b===a)" 
   },
   {
-    question: "Java script handles?",
+    question: "The Keyword "-this-" refers to?",
     options: [
-      "Content",
-      "format",
-      "Design",
-      "overall functionality of the application",
+      "Console.log",
+      "the global object",
+      "the window",
+      "your computer",
     ],
-    correctAnswer: "overall functionality of the application" 
+    correctAnswer: "the global object" 
+  },
+  {
+    question: "What does -itt- stand for in a loop statement?",
+    options: [
+      "information technology",
+      "cousin it",
+      "increment an array by 1",
+      "start the loop",
+    ],
+    correctAnswer: "increment an array by 1" 
   },
 ]
 
@@ -54,6 +64,17 @@ optionBtnB.textContent = quizQuestions[0].options[1]
 optionBtnC.textContent = quizQuestions[0].options[2]
 optionBtnD.textContent = quizQuestions[0].options[3]
 
+function nextQuestion(){
+  console.log("correctAnswer")
+}
+function check(){
+  console.log("incorrect")
+
+  var c=0
+  var answerQuestion = quizQuestion;
+  
+
+}
 
 
 
@@ -118,6 +139,7 @@ function clock(){
   
 }
 // starts quiz
+
 function startQuiz(){
 questionsDiv.removeAttribute("class");
 }
@@ -125,4 +147,4 @@ questionsDiv.removeAttribute("class");
 
 
  startButton.addEventListener("click",startQuiz);
- //submit.addEventListener("click",option)
+submit.addEventListener("click",nextQuestion);
