@@ -69,8 +69,12 @@ function nextQuestion(){
   console.log("correctAnswer")
 
   var options = document.querySelectorAll(".options");
-for(i=0; i < options.length; i++){
-  options[i].answer
+for(i=1; i < options.length; i++){
+  questionEl.textContent = quizQuestions[i].question
+optionBtnA.textContent = quizQuestions[i].options[0]
+optionBtnB.textContent = quizQuestions[i].options[1]
+optionBtnC.textContent = quizQuestions[i].options[2]
+optionBtnD.textContent = quizQuestions[i].options[3]
 } 
 
 }
