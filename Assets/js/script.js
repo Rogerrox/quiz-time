@@ -38,7 +38,7 @@ var quizQuestions = [
     correctAnswer: "console.log(b===a)" 
   },
   {
-    question: "The Keyword "-this-" refers to?",
+    question: "The Keyword this refers to?",
     options: [
       "Console.log",
       "the global object",
@@ -59,27 +59,48 @@ var quizQuestions = [
   },
 ]
 
-questionEl.textContent = quizQuestions[0].question
-optionBtnA.textContent = quizQuestions[0].options[0]
-optionBtnB.textContent = quizQuestions[0].options[1]
-optionBtnC.textContent = quizQuestions[0].options[2]
-optionBtnD.textContent = quizQuestions[0].options[3]
+var currentQuestion=0
+
+questionEl.textContent = quizQuestions[currentQuestion].question
+optionBtnA.textContent = quizQuestions[currentQuestion].options[0]
+optionBtnB.textContent = quizQuestions[currentQuestion].options[1]
+optionBtnC.textContent = quizQuestions[currentQuestion].options[2]
+optionBtnD.textContent = quizQuestions[currentQuestion].options[3]
+
+
 
 function nextQuestion(){
   console.log("correctAnswer")
-
-  var options = document.querySelectorAll(".options");
-for(i=1; i < options.length; i++){
-  questionEl.textContent = quizQuestions[i].question
-optionBtnA.textContent = quizQuestions[i].options[0]
-optionBtnB.textContent = quizQuestions[i].options[1]
-optionBtnC.textContent = quizQuestions[i].options[2]
-optionBtnD.textContent = quizQuestions[i].options[3]
-} 
+currentQuestion +=1
+questionEl.textContent = quizQuestions[currentQuestion].question
+optionBtnA.textContent = quizQuestions[currentQuestion].options[0]
+optionBtnB.textContent = quizQuestions[currentQuestion].options[1]
+optionBtnC.textContent = quizQuestions[currentQuestion].options[2]
+optionBtnD.textContent = quizQuestions[currentQuestion].options[3]
+//   var options = document.querySelectorAll(".options");
+// for(i=1; i < options.length; i++){
+//   questionEl.textContent = quizQuestions[i].question
+// optionBtnA.textContent = quizQuestions[i].options[0]
+// optionBtnB.textContent = quizQuestions[i].options[1]
+// optionBtnC.textContent = quizQuestions[i].options[2]
+// optionBtnD.textContent = quizQuestions[i].options[3]
+// } 
 
 }
+// function quizQuestions(eventObject){
+//   let optionButton = eventObject.target;
+//   resultDiv.style.display ="block";
+//   if(optionIsCorrect(optionButton)){
+//     resultText.textContent = "correct!";
+    
+//   }else{}
+//   resultText.textContent = "Incorrect!";
+// }
+
 function check(){
   console.log("incorrect")
+
+  if(questionEl.value !==quizQuestions[currentQuestionIndex].correctAnswer){}
 
   var c=0
   var answerQuestion = quizQuestion;
