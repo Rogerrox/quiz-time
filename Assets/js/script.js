@@ -12,6 +12,7 @@ var optionBtnA = document.querySelector("#a_text");
 var optionBtnB = document.querySelector("#b_text");
 var optionBtnC = document.querySelector("#c_text");
 var optionBtnD = document.querySelector("#d_text");
+var options
 
 var quizQuestions = [
   
@@ -66,6 +67,12 @@ optionBtnD.textContent = quizQuestions[0].options[3]
 
 function nextQuestion(){
   console.log("correctAnswer")
+
+  var options = document.querySelectorAll(".options");
+for(i=0; i < options.length; i++){
+  options[i].answer
+} 
+
 }
 function check(){
   console.log("incorrect")
@@ -73,36 +80,7 @@ function check(){
   var c=0
   var answerQuestion = quizQuestion;
   
-
 }
-
-
-
-//var body  document.body;
-
-// var quizQuestionEl = document.createElement('div')
-
-// var questionsEl = document.createElement("ol");
-// var li1 =document.createElement("li");
-// var li2 =document.createElement("li");
-// var li3 =document.createElement("li");
-// var li4 =document.createElement("li");
-
-// li1.textContent = "Java script handles?";
-// li2.textContent = "If var a = 10 and var b = 10, what is the Value and type?";
-// li3.textContent = "The keyword this refers to?";
-// li4.textContent = 'What does "i++" stand for in a loop statement?';
-
-// questionsEl.appendChild(li1);
-// questionsEl.appendChild(li2);
-// questionsEl.appendChild(li3);
-// questionsEl.appendChild(li4);
-
-// quizQuestionEl.appendChild(questionsEl);
-
-// quizQuestionEl.textContent = "Quiz"
-// console.log("quizQestionEl")
-
 
 // renderLastRegistered();
 
